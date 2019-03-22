@@ -15,6 +15,14 @@
 		CAA2F0BF2242A618006ACA61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA2F0BD2242A618006ACA61 /* Main.storyboard */; };
 		CAA2F0C12242A619006ACA61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA2F0C02242A619006ACA61 /* Assets.xcassets */; };
 		CAA2F0C42242A619006ACA61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA2F0C22242A619006ACA61 /* LaunchScreen.storyboard */; };
+		CAA2F0D02242A693006ACA61 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0CF2242A693006ACA61 /* Vertex.swift */; };
+		CAA2F0D22242A7CA006ACA61 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0D12242A7CA006ACA61 /* Edge.swift */; };
+		CAA2F0D42242A8BB006ACA61 /* Graphable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0D32242A8BB006ACA61 /* Graphable.swift */; };
+		CAA2F0D62242A908006ACA61 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0D52242A907006ACA61 /* AdjacencyList.swift */; };
+		CAA2F0DB2244617C006ACA61 /* GraphFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0DA2244617C006ACA61 /* GraphFactory.swift */; };
+		CAA2F0DE224468AD006ACA61 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0DD224468AD006ACA61 /* Queue.swift */; };
+		CAA2F0E3224469B0006ACA61 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0E2224469B0006ACA61 /* Search.swift */; };
+		CAF9BD4722450D2000C7A073 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF9BD4622450D2000C7A073 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,14 @@
 		CAA2F0C02242A619006ACA61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAA2F0C32242A619006ACA61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAA2F0C52242A619006ACA61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAA2F0CF2242A693006ACA61 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		CAA2F0D12242A7CA006ACA61 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		CAA2F0D32242A8BB006ACA61 /* Graphable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphable.swift; sourceTree = "<group>"; };
+		CAA2F0D52242A907006ACA61 /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
+		CAA2F0DA2244617C006ACA61 /* GraphFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphFactory.swift; sourceTree = "<group>"; };
+		CAA2F0DD224468AD006ACA61 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		CAA2F0E2224469B0006ACA61 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		CAF9BD4622450D2000C7A073 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +76,106 @@
 		CAA2F0B22242A618006ACA61 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				CAA2F0CE2242A674006ACA61 /* Game */,
+				CAA2F0CD2242A64B006ACA61 /* Template */,
+				CAA2F0CC2242A635006ACA61 /* Assets */,
+				CAA2F0D922446168006ACA61 /* Utils */,
+				CAA2F0CB2242A626006ACA61 /* Source */,
+				CAA2F0C52242A619006ACA61 /* Info.plist */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		CAA2F0CB2242A626006ACA61 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CAF9BD4822450D2F00C7A073 /* Stack */,
+				CAA2F0DC224468A1006ACA61 /* Queue */,
+				CAA2F0D82244614D006ACA61 /* Graph */,
+			);
+			name = Source;
+			path = GraphModel;
+			sourceTree = "<group>";
+		};
+		CAA2F0CC2242A635006ACA61 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2F0C22242A619006ACA61 /* LaunchScreen.storyboard */,
+				CAA2F0BD2242A618006ACA61 /* Main.storyboard */,
+				CAA2F0C02242A619006ACA61 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CAA2F0CD2242A64B006ACA61 /* Template */ = {
+			isa = PBXGroup;
+			children = (
 				CAA2F0B32242A618006ACA61 /* AppDelegate.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		CAA2F0CE2242A674006ACA61 /* Game */ = {
+			isa = PBXGroup;
+			children = (
 				CAA2F0B52242A618006ACA61 /* GameScene.sks */,
 				CAA2F0B72242A618006ACA61 /* Actions.sks */,
 				CAA2F0B92242A618006ACA61 /* GameScene.swift */,
 				CAA2F0BB2242A618006ACA61 /* GameViewController.swift */,
-				CAA2F0BD2242A618006ACA61 /* Main.storyboard */,
-				CAA2F0C02242A619006ACA61 /* Assets.xcassets */,
-				CAA2F0C22242A619006ACA61 /* LaunchScreen.storyboard */,
-				CAA2F0C52242A619006ACA61 /* Info.plist */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		CAA2F0D82244614D006ACA61 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2F0D32242A8BB006ACA61 /* Graphable.swift */,
+				CAA2F0D52242A907006ACA61 /* AdjacencyList.swift */,
+				CAA2F0D12242A7CA006ACA61 /* Edge.swift */,
+				CAA2F0CF2242A693006ACA61 /* Vertex.swift */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		CAA2F0D922446168006ACA61 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2F0E022446984006ACA61 /* Search */,
+				CAA2F0DF2244696E006ACA61 /* Factory */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CAA2F0DC224468A1006ACA61 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2F0DD224468AD006ACA61 /* Queue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		CAA2F0DF2244696E006ACA61 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2F0DA2244617C006ACA61 /* GraphFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		CAA2F0E022446984006ACA61 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2F0E2224469B0006ACA61 /* Search.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CAF9BD4822450D2F00C7A073 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				CAF9BD4622450D2000C7A073 /* Stack.swift */,
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +251,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA2F0D42242A8BB006ACA61 /* Graphable.swift in Sources */,
+				CAA2F0E3224469B0006ACA61 /* Search.swift in Sources */,
 				CAA2F0BA2242A618006ACA61 /* GameScene.swift in Sources */,
+				CAA2F0D02242A693006ACA61 /* Vertex.swift in Sources */,
 				CAA2F0BC2242A618006ACA61 /* GameViewController.swift in Sources */,
+				CAF9BD4722450D2000C7A073 /* Stack.swift in Sources */,
+				CAA2F0D62242A908006ACA61 /* AdjacencyList.swift in Sources */,
+				CAA2F0D22242A7CA006ACA61 /* Edge.swift in Sources */,
 				CAA2F0B42242A618006ACA61 /* AppDelegate.swift in Sources */,
+				CAA2F0DE224468AD006ACA61 /* Queue.swift in Sources */,
+				CAA2F0DB2244617C006ACA61 /* GraphFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

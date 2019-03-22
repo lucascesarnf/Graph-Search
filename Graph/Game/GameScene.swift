@@ -15,7 +15,15 @@ class GameScene: SKScene {
     private var spinnyNode : SKShapeNode?
     
     override func didMove(to view: SKView) {
-        
+        super.didMove(to: view)
+        let graph = GraphFactory.romania.initialize()
+        let arad = Vertex(data: "Arad")
+        let bucharest = Vertex(data: "Bucharest")
+        Search.breadthFirstSearch(graph, from: arad, to: bucharest)
+        Search.uniformBreadthFirstSearch(graph, from: arad, to: bucharest)
+        Search.depthFirstSearch(from: arad, to: bucharest, graph: graph)
+    }
+        /*
         // Get label node from scene and store it for use later
         self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
         if let label = self.label {
@@ -85,5 +93,5 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
-    }
+    }*/
 }
