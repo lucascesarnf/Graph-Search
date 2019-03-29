@@ -20,6 +20,7 @@ O problema proposto é baseado no seguinte grafo:
 2. Custo Uniforme
 3. Em Profundidade
 4. Aprofundamento Iterativo
+5. A*
                 
 ----
 Os algoritmos encontram-se no arquivo `Graph-Search/Graph/Utils/Search/`
