@@ -120,52 +120,48 @@ enum Search {
         return stack
     }
     
-//    static func depthFirstSearch<Element>(_ adjacencyList: AdjacencyList<Element>, from vertexA: Vertex<Element>, to vertexB: Vertex<Element>) {
-//        print("\n\n****** Depth First Search ******")
-//        let nodes = depthFirst(adjacencyList, from: vertexA, to: vertexB)
-//        print(nodes)
-//    }
-//
-//    private static func depthFirst<Element>(_ adjacencyList: AdjacencyList<Element>, from vertexA: Vertex<Element>, to vertexB: Vertex<Element>, _ alreadyExploredNodes: [Vertex<Element>] = [Vertex<Element>]()) -> [Vertex<Element>] {
-//
-//        var nodesExplored = [vertexA]
-//
-//        guard let edges = adjacencyList.adjacencyDict[vertexA] else { return [] }
-//
-//        for edge in edges {
-//            let vertex = edge.destination
-//            if vertex == vertexB {
-//                return [vertex]
-//            }
-//
-//            if !alreadyExploredNodes.contains(vertex) {
-//                print("[\(alreadyExploredNodes)][\(nodesExplored)] -> Atual:\(vertex)")
-//                nodesExplored += depthFirst(adjacencyList, from: vertex, to:vertexB, alreadyExploredNodes + nodesExplored)
-//            }
-//        }
-//
-//        return nodesExplored
-//        /*
-//        var nodesExplored = alreadyExploredNodes
-//
-//        if !nodesExplored.contains(vertexA) {
-//            nodesExplored += [vertexA]
-//        }
-//
-//        guard let edges = adjacencyList.adjacencyDict[vertexA] else { return [] }
-//
-//        for edge in edges {
-//            let vertex = edge.destination
-//
-//            if vertex == vertexB {
-//                return nodesExplored + [vertex]
-//            }
-//
-//            if !nodesExplored.contains(vertex) {
-//                nodesExplored += depthFirst(adjacencyList, from: vertex, to:vertexB, nodesExplored)
-//            }
-//        }
-//
-//        return Array(Set(nodesExplored))*/
-//    }
+    static func aStarSearch(from start: Vertex<String>, to end: Vertex<String>, graph: AdjacencyList<String>, heuristicTable: [String:Double]) {
+        print("\n\n****** A* Search ********")
+        let nodes = aStar(from: start, to: end, graph: graph, heuristicTable: heuristicTable)
+        print(nodes)
+    }
+    
+    static func aStar(from start: Vertex<String>, to end: Vertex<String>, graph: AdjacencyList<String>, heuristicTable: [String:Double]) -> Stack<Vertex<String>> {
+        var visited = Set<Vertex<String>>()
+        var stack = Stack<Vertex<String>>()
+        
+        stack.push(start)
+        visited.insert(start)
+        
+        typealias AStarData = (vert: Vertex<String>, f: Double)
+        
+        while let vertex = stack.peek(), vertex != end {
+            guard let neighbours = graph.edges(from: vertex), neighbours.count > 0 else {
+                stack.pop()
+                continue
+            }
+            
+            var edges = [AStarData]()
+            
+            for edge in neighbours {
+                let currentVert = edge.destination
+                if !visited.contains(currentVert) {
+                     visited.insert(currentVert)
+                    //compare the value of F() with the last element that entry on stack
+                    edges.append((vert: currentVert, f: Search.funcAStar(g: edge.weight, h: heuristicTable[currentVert.data])))
+                }
+            }
+            
+            if let minF = edges.sorted(by: {$0.f < $1.f}).first {
+                stack.push(minF.vert)
+            }
+        }
+        
+        return stack
+    }
+    
+    
+    private static func funcAStar(g: Double?, h: Double?) -> Double {
+        return (g ?? 0) + (h ?? 0)
+    }
 }

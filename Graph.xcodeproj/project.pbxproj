@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA6EFFA6224D912600BA8A05 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6EFF9E224D912600BA8A05 /* AdjacencyList.swift */; };
+		CA6EFFA7224D912600BA8A05 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6EFF9F224D912600BA8A05 /* Edge.swift */; };
+		CA6EFFA8224D912600BA8A05 /* Graphable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6EFFA0224D912600BA8A05 /* Graphable.swift */; };
+		CA6EFFA9224D912600BA8A05 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6EFFA1224D912600BA8A05 /* Vertex.swift */; };
+		CA6EFFAA224D912600BA8A05 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6EFFA3224D912600BA8A05 /* Queue.swift */; };
+		CA6EFFAB224D912600BA8A05 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6EFFA5224D912600BA8A05 /* Stack.swift */; };
 		CAA2F0B42242A618006ACA61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0B32242A618006ACA61 /* AppDelegate.swift */; };
 		CAA2F0B62242A618006ACA61 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAA2F0B52242A618006ACA61 /* GameScene.sks */; };
 		CAA2F0B82242A618006ACA61 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CAA2F0B72242A618006ACA61 /* Actions.sks */; };
@@ -15,17 +21,17 @@
 		CAA2F0BF2242A618006ACA61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA2F0BD2242A618006ACA61 /* Main.storyboard */; };
 		CAA2F0C12242A619006ACA61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA2F0C02242A619006ACA61 /* Assets.xcassets */; };
 		CAA2F0C42242A619006ACA61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA2F0C22242A619006ACA61 /* LaunchScreen.storyboard */; };
-		CAA2F0D02242A693006ACA61 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0CF2242A693006ACA61 /* Vertex.swift */; };
-		CAA2F0D22242A7CA006ACA61 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0D12242A7CA006ACA61 /* Edge.swift */; };
-		CAA2F0D42242A8BB006ACA61 /* Graphable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0D32242A8BB006ACA61 /* Graphable.swift */; };
-		CAA2F0D62242A908006ACA61 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0D52242A907006ACA61 /* AdjacencyList.swift */; };
 		CAA2F0DB2244617C006ACA61 /* GraphFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0DA2244617C006ACA61 /* GraphFactory.swift */; };
-		CAA2F0DE224468AD006ACA61 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0DD224468AD006ACA61 /* Queue.swift */; };
 		CAA2F0E3224469B0006ACA61 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2F0E2224469B0006ACA61 /* Search.swift */; };
-		CAF9BD4722450D2000C7A073 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF9BD4622450D2000C7A073 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA6EFF9E224D912600BA8A05 /* AdjacencyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
+		CA6EFF9F224D912600BA8A05 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		CA6EFFA0224D912600BA8A05 /* Graphable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphable.swift; sourceTree = "<group>"; };
+		CA6EFFA1224D912600BA8A05 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		CA6EFFA3224D912600BA8A05 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		CA6EFFA5224D912600BA8A05 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		CAA2F0B02242A618006ACA61 /* Graph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA2F0B32242A618006ACA61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAA2F0B52242A618006ACA61 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -36,14 +42,8 @@
 		CAA2F0C02242A619006ACA61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAA2F0C32242A619006ACA61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAA2F0C52242A619006ACA61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAA2F0CF2242A693006ACA61 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
-		CAA2F0D12242A7CA006ACA61 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
-		CAA2F0D32242A8BB006ACA61 /* Graphable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphable.swift; sourceTree = "<group>"; };
-		CAA2F0D52242A907006ACA61 /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
 		CAA2F0DA2244617C006ACA61 /* GraphFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphFactory.swift; sourceTree = "<group>"; };
-		CAA2F0DD224468AD006ACA61 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		CAA2F0E2224469B0006ACA61 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
-		CAF9BD4622450D2000C7A073 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +57,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA6EFF9C224D912600BA8A05 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CA6EFF9D224D912600BA8A05 /* Graph */,
+				CA6EFFA2224D912600BA8A05 /* Queue */,
+				CA6EFFA4224D912600BA8A05 /* Stack */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CA6EFF9D224D912600BA8A05 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				CA6EFF9E224D912600BA8A05 /* AdjacencyList.swift */,
+				CA6EFF9F224D912600BA8A05 /* Edge.swift */,
+				CA6EFFA0224D912600BA8A05 /* Graphable.swift */,
+				CA6EFFA1224D912600BA8A05 /* Vertex.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		CA6EFFA2224D912600BA8A05 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				CA6EFFA3224D912600BA8A05 /* Queue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		CA6EFFA4224D912600BA8A05 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				CA6EFFA5224D912600BA8A05 /* Stack.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
 		CAA2F0A72242A618006ACA61 = {
 			isa = PBXGroup;
 			children = (
@@ -76,25 +113,14 @@
 		CAA2F0B22242A618006ACA61 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				CA6EFF9C224D912600BA8A05 /* Source */,
 				CAA2F0CE2242A674006ACA61 /* Game */,
 				CAA2F0CD2242A64B006ACA61 /* Template */,
 				CAA2F0CC2242A635006ACA61 /* Assets */,
 				CAA2F0D922446168006ACA61 /* Utils */,
-				CAA2F0CB2242A626006ACA61 /* Source */,
 				CAA2F0C52242A619006ACA61 /* Info.plist */,
 			);
 			path = Graph;
-			sourceTree = "<group>";
-		};
-		CAA2F0CB2242A626006ACA61 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				CAF9BD4822450D2F00C7A073 /* Stack */,
-				CAA2F0DC224468A1006ACA61 /* Queue */,
-				CAA2F0D82244614D006ACA61 /* Graph */,
-			);
-			name = Source;
-			path = GraphModel;
 			sourceTree = "<group>";
 		};
 		CAA2F0CC2242A635006ACA61 /* Assets */ = {
@@ -126,17 +152,6 @@
 			path = Game;
 			sourceTree = "<group>";
 		};
-		CAA2F0D82244614D006ACA61 /* Graph */ = {
-			isa = PBXGroup;
-			children = (
-				CAA2F0D32242A8BB006ACA61 /* Graphable.swift */,
-				CAA2F0D52242A907006ACA61 /* AdjacencyList.swift */,
-				CAA2F0D12242A7CA006ACA61 /* Edge.swift */,
-				CAA2F0CF2242A693006ACA61 /* Vertex.swift */,
-			);
-			path = Graph;
-			sourceTree = "<group>";
-		};
 		CAA2F0D922446168006ACA61 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,14 +159,6 @@
 				CAA2F0DF2244696E006ACA61 /* Factory */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		CAA2F0DC224468A1006ACA61 /* Queue */ = {
-			isa = PBXGroup;
-			children = (
-				CAA2F0DD224468AD006ACA61 /* Queue.swift */,
-			);
-			path = Queue;
 			sourceTree = "<group>";
 		};
 		CAA2F0DF2244696E006ACA61 /* Factory */ = {
@@ -168,14 +175,6 @@
 				CAA2F0E2224469B0006ACA61 /* Search.swift */,
 			);
 			path = Search;
-			sourceTree = "<group>";
-		};
-		CAF9BD4822450D2F00C7A073 /* Stack */ = {
-			isa = PBXGroup;
-			children = (
-				CAF9BD4622450D2000C7A073 /* Stack.swift */,
-			);
-			path = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,16 +250,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAA2F0D42242A8BB006ACA61 /* Graphable.swift in Sources */,
+				CA6EFFA8224D912600BA8A05 /* Graphable.swift in Sources */,
+				CA6EFFA6224D912600BA8A05 /* AdjacencyList.swift in Sources */,
+				CA6EFFA9224D912600BA8A05 /* Vertex.swift in Sources */,
 				CAA2F0E3224469B0006ACA61 /* Search.swift in Sources */,
+				CA6EFFA7224D912600BA8A05 /* Edge.swift in Sources */,
+				CA6EFFAB224D912600BA8A05 /* Stack.swift in Sources */,
+				CA6EFFAA224D912600BA8A05 /* Queue.swift in Sources */,
 				CAA2F0BA2242A618006ACA61 /* GameScene.swift in Sources */,
-				CAA2F0D02242A693006ACA61 /* Vertex.swift in Sources */,
 				CAA2F0BC2242A618006ACA61 /* GameViewController.swift in Sources */,
-				CAF9BD4722450D2000C7A073 /* Stack.swift in Sources */,
-				CAA2F0D62242A908006ACA61 /* AdjacencyList.swift in Sources */,
-				CAA2F0D22242A7CA006ACA61 /* Edge.swift in Sources */,
 				CAA2F0B42242A618006ACA61 /* AppDelegate.swift in Sources */,
-				CAA2F0DE224468AD006ACA61 /* Queue.swift in Sources */,
 				CAA2F0DB2244617C006ACA61 /* GraphFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

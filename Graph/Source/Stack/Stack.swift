@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Stack<T> {
+public struct Stack<T> where T: Equatable {
     fileprivate var array: [T] = []
     
     public init() {}
@@ -26,6 +26,11 @@ public struct Stack<T> {
     public func peek() -> T? {
         return array.last
     }
+    
+    public func contains(element: T) -> Bool {
+        return array.contains {$0 == element}
+    }
+    
 }
 
 extension Stack: CustomStringConvertible {

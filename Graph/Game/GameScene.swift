@@ -19,9 +19,12 @@ class GameScene: SKScene {
         let graph = GraphFactory.romania.initialize()
         let arad = Vertex(data: "Arad")
         let bucharest = Vertex(data: "Bucharest")
+        let heuristicTable = GraphFactory.heuristicTable
         Search.breadthFirstSearch(graph, from: arad, to: bucharest)
         Search.uniformBreadthFirstSearch(graph, from: arad, to: bucharest)
         Search.depthFirstSearch(from: arad, to: bucharest, graph: graph)
+        
+        Search.aStarSearch(from: arad, to: bucharest, graph: graph, heuristicTable: heuristicTable)
     }
         /*
         // Get label node from scene and store it for use later

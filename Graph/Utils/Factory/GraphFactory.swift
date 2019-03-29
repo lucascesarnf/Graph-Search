@@ -11,6 +11,18 @@ import Foundation
 enum GraphFactory {
     case romania, world
     
+    static var heuristicTable: [String: Double] {
+        return [ "Arad": 366,
+                 "Sibiu": 253,
+                 "Zerind": 374,
+                 "Oradea": 380,
+                 "Fagaras": 178,
+                 "Bucharest": 0,
+                 "Pitesti": 98,
+                 "Craiova": 160,
+                 "Rimnicu Vilcea": 193]
+    }
+    
     func initialize() -> AdjacencyList<String> {
         switch self {
         case .world:
